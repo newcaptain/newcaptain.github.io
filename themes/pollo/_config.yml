@@ -1,0 +1,21 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    Weibo: https://weibo.com/u/2294215127
+    GitHub: https://github.com/newcaptain
+    Rss: /atom.xml
+
+favicon: /favicon.png
+logo: /favicon.png
+
+# Comment
+# e.g disqus: seansun
+disqus: NEWCAPTAIN
+duoshuo:
+
+# Analytics
+# google-analytics:
+# ga: UA-xxxxxxxx-x
+
+# Copyright Infomation
+startyear: 2018
