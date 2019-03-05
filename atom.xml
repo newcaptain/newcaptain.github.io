@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NEWCAPTAIN</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-03-05T01:48:13.491Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>New Captain</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MDN学习笔记（一）</title>
+    <link href="http://yoursite.com/2019/03/05/MDN%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/03/05/MDN学习笔记（一）/</id>
+    <published>2019-03-05T01:41:17.000Z</published>
+    <updated>2019-03-05T01:48:13.491Z</updated>
+    
+    <content type="html"><![CDATA[<p>整理一些标签， 包括一些 H5 标签和一些语义化的标签。<br><a id="more"></a></p><h2 id="区段标签"><a href="#区段标签" class="headerlink" title="区段标签"></a>区段标签</h2><ul><li><code>&lt;main&gt;</code>: 主内容, 存放每个页面独有内容, 每个页面只有一个<code>&lt;main&gt;</code>,直接<code>&lt;body&gt;</code></li><li><code>&lt;aside&gt;</code>: 侧边栏</li><li><code>&lt;article&gt;</code>: 类似<code>section</code>, 可独立页面的一篇文章</li><li><code>&lt;section&gt;</code>: 页面的一部分, 通常有标题(<code>&lt;header&gt;</code>)和内容</li></ul><h2 id="描述标签"><a href="#描述标签" class="headerlink" title="描述标签"></a>描述标签</h2><ul><li><code>&lt;dl&gt;</code>: description list 描述列表</li><li><code>&lt;dt&gt;</code>: description term 描述项</li><li><code>&lt;dd&gt;</code>: description description 描述</li></ul><h2 id="引用标签"><a href="#引用标签" class="headerlink" title="引用标签"></a>引用标签</h2><ul><li><code>&lt;blockquote&gt;</code>: 块级引用标签，url设置到 cite 属性  </li><li><code>&lt;q&gt;</code>: 行内的引用标签</li><li><code>&lt;cite&gt;</code>: 文本形式显示出处<br><em>引用默认斜体</em></li></ul><h2 id="数学计算机相关"><a href="#数学计算机相关" class="headerlink" title="数学计算机相关"></a>数学计算机相关</h2><ul><li><code>&lt;code&gt;</code>: 计算机通用代码</li><li><code>&lt;pre&gt;</code>: 保留空格，放在<code>&lt;pre&gt;</code>元素里的的文本保留空格</li><li><code>&lt;var&gt;</code>: 标记具体变量名</li><li><code>&lt;kbd&gt;</code>: 标记键盘输入</li><li><code>&lt;samp&gt;</code>: 标记计算机输出</li><li><code>&lt;sup&gt;</code>: 上标</li><li><code>&lt;sub&gt;</code>: 下标</li></ul><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul><li><code>&lt;em&gt;</code>: 强调 （浏览器默认斜体）</li><li><code>&lt;strong&gt;</code>: 非常重要 （浏览器默认加粗）</li><li><code>&lt;abbr&gt;</code>: 缩略语 鼠标移动显示 titile 属性</li><li><code>&lt;address&gt;</code>: 作者联系方式, 不应该用于通讯地址</li><li><code>&lt;time&gt;</code>: 有 datetime 属性供机器识别</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;整理一些标签， 包括一些 H5 标签和一些语义化的标签。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日常学习笔记</title>
+    <link href="http://yoursite.com/2018/11/28/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/11/28/日常学习笔记/</id>
+    <published>2018-11-28T12:14:22.000Z</published>
+    <updated>2019-03-05T01:35:37.198Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近一两个星期比较忙，只有最近两天好点，有空把最近踩过的坑整理一下 。</p><a id="more"></a><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><hr><h3 id="MySql有关"><a href="#MySql有关" class="headerlink" title="MySql有关"></a>MySql有关</h3><p>版本说明： </p><ul><li>mysql:  8.0.13</li><li>c3p0: 0.9.5.2 </li></ul><p><strong>连接地址: </strong> 后面要加一句 <code>serverTimezone=GMT%2B8</code></p><p><strong>xml: </strong>maven自动构建的<strong>web.xml</strong>默认版本是2.3的，不能使用一些功能，需要调整xml版本为3.0以上。一下是<strong>4.0</strong>版本的。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">version</span>=<span class="string">"4.0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure></p><p><strong>然后</strong>是mysql 8.0的各种坑，各种版本不对。</p><h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p><strong>js</strong>的基本类型，然后js的基本类型居然有方法 –。原因是调用方法的时候自动在外面加一层东西，然后执行完方法后自动销毁。</p><ul><li>indexOf(str, pos)：从pos位开始找str，返回 str 出现的位置，如果没有返回 -1</li><li>includeWith(str)：返回是否包含 str，返回 true 或false</li><li>startsWith(str)：返回是否以 str 开头</li><li>endswith(str)：返回是否以 str 结尾</li><li>slice(start [, end])：返回 [start,end) 字符串</li><li>substring(start, end) ：大部分同 slice，但这个 start 可以大于 end，和 start 大于 end 相同</li><li>str.substr(start [, length]) : 从 start 开始返回给定 length 的字符串部分。</li></ul><p>最近再做项目的过程中，做的是一个pc端的那种官网，用了各种 ES6 新语法，然后最新的 Chrome 页没有报错， 然后做兼容 IE 的时候各种崩溃的感觉。所以新技术(貌似早就不新了)要慎用，特别是一些企业级的项目。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><p>最近各种新技术满天飞，自己还是要踏实一点，除一除自己的浮躁的心。静下来先把 CSS、JS 的基础先打好，特别是 <strong>JS</strong> 这门语言太有魅力了。</p><p><strong>愿岁月静好，淡然花开</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近一两个星期比较忙，只有最近两天好点，有空把最近踩过的坑整理一下 。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记佛山易班开发者大会</title>
+    <link href="http://yoursite.com/2018/08/29/%E8%AE%B0%E4%BD%9B%E5%B1%B1%E6%98%93%E7%8F%AD%E5%BC%80%E5%8F%91%E8%80%85%E5%A4%A7%E4%BC%9A/"/>
+    <id>http://yoursite.com/2018/08/29/记佛山易班开发者大会/</id>
+    <published>2018-08-28T16:13:24.000Z</published>
+    <updated>2019-03-05T01:35:37.198Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>暑假在家玩得很开心， 突然通知有这个活动。开始还在纠结要不要去， 最后 5 天下来收获还是很多的， 颇有感慨， 下面分享下这次经历， 也记录一下自己一路走来的点点滴滴。</p><a id="more"></a><h2 id="大会经历"><a href="#大会经历" class="headerlink" title="大会经历"></a>大会经历</h2><p>在一个很偶然的机会参加此次开发者大会， 刚开始什么都很懵懂， 不知道来这边是干什么的， 来之前两三天百度下才知道要带项目这边展示的， 团队也没准备什么就来佛山这边了， 刚来到这边就出去浪了一晚上才回酒店， 住的是 5 星级酒店（不错哈！）， 第一天上午开幕式和一些讲座， 主要是创新创业的和介绍此次项目的一些演讲， 然后下午就有了一些人工智能方面的讲座， 全程蒙蔽中 : ) 。 然后第二天第三天基本类似，第四天就各个队伍上台展示产品， 最后一天上午颁奖。</p><h2 id="参会过程"><a href="#参会过程" class="headerlink" title="参会过程"></a>参会过程</h2><p>我们也没有一个特别好的项目， 所以项目只能硬着头皮弄上去， 然后头一天我们熬到很晚才睡， 然后团队里边除了我其他人都没熬过夜的， 到了第二天现场的时候各种翻车，完全就是大型车祸现场， 再加上我们的项目没有很好的创意， 最终评委问了两句就去吃饭了 。。。</p><p>结果当然就没获得奖。 ：( </p><h2 id="总结体会"><a href="#总结体会" class="headerlink" title="总结体会"></a>总结体会</h2><p>整个大会感觉挺好的， 很多大公司的大咖讲一些前沿的技术， 拓宽自己的眼界， 也结交了一些其他高校的学生。</p><h3 id="个人的经验"><a href="#个人的经验" class="headerlink" title="个人的经验"></a>个人的经验</h3><ul><li>个人的综合能力确实没其他高校好， 不管是他们表达、 社交能力、 他们临场发挥能力，还是单纯的技术能力，综合起来，他们确实很强。</li><li>给自己未来提供一个方向。 最近也是自己很迷茫的时候。 不知道接下来自己要干什么， 喜欢做什么。 他们给了我很多启示， 北邮的一个h5游戏确实让我有了向前的方向， 还有重庆大学的web开发转web安全也让我感觉其实还有很大领域没探索。其实自己还有很多时间钻研其他方向。</li><li>自己的搭讪能力很差， 甚至不敢去搭讪，这点感觉很不如其他高校的学生。 以后自己要外向一点，努力提高自己的各方面能力。</li></ul><p>这 5 天下来， 虽然没得奖， 但对我来说收获颇多。 </p><p><strong>参考：</strong> <a href="https://v.qq.com/x/page/q07701cy4ag.html" target="_blank" rel="noopener">2018易班开发者大会回顾</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;暑假在家玩得很开心， 突然通知有这个活动。开始还在纠结要不要去， 最后 5 天下来收获还是很多的， 颇有感慨， 下面分享下这次经历， 也记录一下自己一路走来的点点滴滴。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="http://yoursite.com/2018/08/14/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/08/14/第一篇博客/</id>
+    <published>2018-08-14T03:14:15.000Z</published>
+    <updated>2019-03-05T01:35:37.198Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实很早就想搭这个博客平台的了， 一直很懒没去折腾， 最近暑假有点空才建这个博客的。</p><a id="more"></a><p> 以前学 Node.JS 的时候自己建过一个博客平台（做得好累）并且买了腾讯云买了 3 个月， 然后前两天玩了一下就没有然后了 : )  ！ 后来还是觉得用 Github 托管的这种博客挺好的， 比较下各种框架觉得 Hexo 还是挺不错的， 而且基于 Node 的， 感觉效率会更好一点。 样式选了好久， 最后决定这个比较顺眼的， 虽然很简洁分类标签啥都没， 不过整体看上去很顺眼就用这个了。</p><p>这是本人第一篇博客， 好像没什么好说的 … </p><p><em>那就说说最近这个暑假吧</em></p><p>今年暑假的任务：</p><ul><li>驾照</li><li>学校易班的项目</li><li>学习 Go 语言</li><li>review github 上的 ss 项目</li><li>研究 Git 多人协同开发的操作</li><li>找女朋友 （ 是不可能的了 ：）</li></ul><p>只完成了 驾照、 项目、 Git 多人项目开发， 其他的要不是完成一半， 要不就是没怎么做。</p><p>感觉还行吧， 就是看书时间好少， 一直折腾这折腾那。 没怎么静下心来做一下算法题。 还有下学期就有算法课了， 感觉又是一顿折磨。 嗯， 下学期开始要认真学习了， 没什么功夫泡机构跟其它的这些了。 </p><p>今天就写到这吧！</p><p>第一次用 md 写文章， 不知效果如何。 还有不知道原作者的标题那边有链接怎么弄的， 有时间研究下哈。</p><p>以后会坚持写博客的哈！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;其实很早就想搭这个博客平台的了， 一直很懒没去折腾， 最近暑假有点空才建这个博客的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 日常学习笔记 · NEWCAPTAIN</title><meta name="description" content="记录日常生活学习"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="NEWCAPTAIN"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://weibo.com/u/2294215127" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/newcaptain" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">日常学习笔记</h1><div class="post-info">Nov 28, 2018</div><div class="post-content"><p>最近一两个星期比较忙，只有最近两天好点，有空把最近踩过的坑整理一下 。</p>
+<a id="more"></a>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><hr>
+<h3 id="MySql有关"><a href="#MySql有关" class="headerlink" title="MySql有关"></a>MySql有关</h3><p>版本说明： </p>
+<ul>
+<li>mysql:  8.0.13</li>
+<li>c3p0: 0.9.5.2 </li>
+</ul>
+<p><strong>连接地址: </strong> 后面要加一句 <code>serverTimezone=GMT%2B8</code></p>
+<p><strong>xml: </strong>maven自动构建的<strong>web.xml</strong>默认版本是2.3的，不能使用一些功能，需要调整xml版本为3.0以上。一下是<strong>4.0</strong>版本的。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">version</span>=<span class="string">"4.0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>然后</strong>是mysql 8.0的各种坑，各种版本不对。</p>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p><strong>js</strong>的基本类型，然后js的基本类型居然有方法 –。原因是调用方法的时候自动在外面加一层东西，然后执行完方法后自动销毁。</p>
+<ul>
+<li>indexOf(str, pos)：从pos位开始找str，返回 str 出现的位置，如果没有返回 -1</li>
+<li>includeWith(str)：返回是否包含 str，返回 true 或false</li>
+<li>startsWith(str)：返回是否以 str 开头</li>
+<li>endswith(str)：返回是否以 str 结尾</li>
+<li>slice(start [, end])：返回 [start,end) 字符串</li>
+<li>substring(start, end) ：大部分同 slice，但这个 start 可以大于 end，和 start 大于 end 相同</li>
+<li>str.substr(start [, length]) : 从 start 开始返回给定 length 的字符串部分。</li>
+</ul>
+<p>最近再做项目的过程中，做的是一个pc端的那种官网，用了各种 ES6 新语法，然后最新的 Chrome 页没有报错， 然后做兼容 IE 的时候各种崩溃的感觉。所以新技术(貌似早就不新了)要慎用，特别是一些企业级的项目。</p>
+<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><p>最近各种新技术满天飞，自己还是要踏实一点，除一除自己的浮躁的心。静下来先把 CSS、JS 的基础先打好，特别是 <strong>JS</strong> 这门语言太有魅力了。</p>
+<p><strong>愿岁月静好，淡然花开</strong></p>
+</div></article></div></main><footer><div class="paginator"><a href="/2019/03/05/MDN学习笔记（一）/" class="prev">PREV</a><a href="/2018/08/29/记佛山易班开发者大会/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'NEWCAPTAIN';
+var disqus_identifier = '2018/11/28/日常学习笔记/';
+var disqus_title = '日常学习笔记';
+var disqus_url = 'http://yoursite.com/2018/11/28/日常学习笔记/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//NEWCAPTAIN.disqus.com/count.js" async></script><div class="copyright"><p>© 2018 - 2019 <a href="http://yoursite.com">New Captain</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
